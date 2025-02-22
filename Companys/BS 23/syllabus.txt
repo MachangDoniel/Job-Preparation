@@ -1,0 +1,149 @@
+// Car Parking System for Apartment (Circuit-Level FSM Implementation)
+
+// 1. D Flip-Flop for Slot Status Storage
+module DFlipFlop(input wire D, input wire clk, input wire reset, output reg Q);
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            Q <= 0;
+        else
+            Q <= D;
+    end
+endmodule
+
+// 2. FSM State Encoding
+module StateMachine(
+    input wire clk,
+    input wire reset,
+    input wire vehicle_detect,
+    input wire authorized,
+    input wire [3:0] slot_status,
+    output reg vehicle_enter,
+    output reg gate_open
+);
+    typedef enum logic [2:0] {
+        IDLE        = 3'b000,
+        DETECT      = 3'b001,
+        AUTH_CHECK  = 3'b010,
+        GATE_OPEN   = 3'b011,
+        FULL        = 3'b100
+    } state_t;
+
+    state_t current_state, next_state;
+
+    // State Transition Logic
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            current_state <= IDLE;
+        else
+            current_state <= next_state;
+    end
+
+    // Next State Logic
+    always @(*) begin
+        case (current_state)
+            IDLE: begin
+                gate_open = 0;
+                vehicle_enter = 0;
+                next_state = vehicle_detect ? DETECT : IDLE;
+            end
+            DETECT: begin
+                next_state = authorized ? AUTH_CHECK : IDLE;
+            end
+            AUTH_CHECK: begin
+                if (slot_status != 0)
+                    next_state = GATE_OPEN;
+                else
+                    next_state = FULL;
+            end
+            GATE_OPEN: begin
+                gate_open = 1;
+                vehicle_enter = 1;
+                next_state = IDLE;
+            end
+            FULL: begin
+                gate_open = 0;
+                vehicle_enter = 0;
+                next_state = IDLE;
+            end
+            default: next_state = IDLE;
+        endcase
+    end
+endmodule
+
+// 3. Slot Counter using Flip-Flops and Logic Gates
+module SlotCounter(
+    input wire clk,
+    input wire reset,
+    input wire vehicle_enter,
+    input wire vehicle_exit,
+    output wire [3:0] slot_status
+);
+    wire [3:0] next_state;
+
+    // Logic for incrementing and decrementing slot count
+    assign next_state = (vehicle_enter && |slot_status) ? slot_status - 1 :
+                        (vehicle_exit) ? slot_status + 1 :
+                        slot_status;
+
+    // D Flip-Flops to store slot count
+    DFlipFlop dff0(.D(next_state[0]), .clk(clk), .reset(reset), .Q(slot_status[0]));
+    DFlipFlop dff1(.D(next_state[1]), .clk(clk), .reset(reset), .Q(slot_status[1]));
+    DFlipFlop dff2(.D(next_state[2]), .clk(clk), .reset(reset), .Q(slot_status[2]));
+    DFlipFlop dff3(.D(next_state[3]), .clk(clk), .reset(reset), .Q(slot_status[3]));
+endmodule
+
+// 4. Display Logic for 7-Segment Display
+module Display(input wire [3:0] slots, output reg [6:0] display);
+    always @(*) begin
+        case(slots)
+            4'b0000: display = 7'b1000000; // 0
+            4'b0001: display = 7'b1111001; // 1
+            4'b0010: display = 7'b0100100; // 2
+            4'b0011: display = 7'b0110000; // 3
+            4'b0100: display = 7'b0011001; // 4
+            4'b0101: display = 7'b0010010; // 5
+            4'b0110: display = 7'b0000010; // 6
+            4'b0111: display = 7'b1111000; // 7
+            4'b1000: display = 7'b0000000; // 8
+            4'b1001: display = 7'b0010000; // 9
+            default: display = 7'b1111111; // Blank
+        endcase
+    end
+endmodule
+
+// 5. Top Module Integrating FSM and Components
+module CarParkingSystem(
+    input wire clk,
+    input wire reset,
+    input wire vehicle_detect,
+    input wire vehicle_exit,
+    input wire authorized,
+    output wire gate_open,
+    output wire [6:0] display
+);
+    wire vehicle_enter;
+    wire [3:0] slot_status;
+
+    StateMachine fsm(
+        .clk(clk),
+        .reset(reset),
+        .vehicle_detect(vehicle_detect),
+        .authorized(authorized),
+        .slot_status(slot_status),
+        .vehicle_enter(vehicle_enter),
+        .gate_open(gate_open)
+    );
+
+    SlotCounter slot_counter(
+        .clk(clk),
+        .reset(reset),
+        .vehicle_enter(vehicle_enter),
+        .vehicle_exit(vehicle_exit),
+        .slot_status(slot_status)
+    );
+
+    Display display_module(
+        .slots(slot_status),
+        .display(display)
+    );
+endmodule
