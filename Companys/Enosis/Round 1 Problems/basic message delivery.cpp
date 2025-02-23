@@ -10,7 +10,12 @@ output: true true false true true false
 
 link: https://www.coursesidekick.com/computer-science/2938345
 */
-
+// Approach:
+// 1. Create a map to store the message and the timestamp at which it was delivered.
+// 2. For each message, check if the message is already present in the map and the difference between the current timestamp and the timestamp at which the message was delivered is less than or equal to k.
+// 3. If the message is already present and the difference is less than or equal to k, return false.
+// 4. If the message is not present or the difference is greater than k, update the timestamp of the message in the map and return true.
+// Time complexity: O(n), Space complexity: O(n)
 #include<bits/stdc++.h>
 
 using namespace std;

@@ -1,0 +1,329 @@
+I have made a summery of the  previously discussed important topics and problems in this group. 
+Anyone can find all of those in this doc.
+https://docs.google.com/document/d/13e95VwaNHvNd4BwcXHOTLe472jEARxAsHK-W8ZHCtsQ/edit
+
+Round 1
+Total 6 ta question chilo. First 2 ta chilo code problem Codeforces ar div2 A category problem ar moto. 
+Then last 4 ta chilo mcq .  Amr mcq chilo basic math problem class 6 or 7 ar math problem. 
+Total 70 minutes time chilo 6 ta question ar ans korar jonno . Ar camera on thake solve korar somoy.
+
+
+Problem 1:
+In a school there is a room where n students will sit for an exam.
+i'th student will sit for the exam from time s_i to t_i
+If there're at least k students in the room, then we need an invigilator.
+
+given q queries. For each query, you're given a time range l r.
+Count the number of minutes where we need an invigilator.
+Sample for problem 1:
+N = 3
+K = 2
+2 9
+3 5
+7 8
+q = 2
+1 10 ans: 5
+6 7 ans: 1
+
+Problem 2:
+S = deft 
+K = 5
+Ans: acft
+
+S = qstd
+K = 1000
+Ans: aaaa
+
+everything <= 1e6
+
+
+problem 2:
+arrange all characters a-z in a cycle.
+Distance between two characters is the minimum distance if we travel one character to another clockwise or anticlockwise.
+example: 
+distance from 'a' to 'c' is 2
+distance from 'a' to 'z' is 1
+
+distance between two strings of length n is the sum of character by character difference.
+
+given a string S of size n and K.
+find the lexicographically smallest string T of size n such that distance between S and T does not exceed K.
+
+mcq:
+
+choose the option that is related to the fifth number the way 2nd number is realted to the 1st number and fourth number is related to the 3rd number.
+52:5 :: 100:7 :: 164:
+
+option 
+7
+8
+9
+11
+
+Problem 1:
+
+There are given a set of words and M sentences. You can replace the words in sentence which is in the words set and replace with its anagram from the words set. For every sentence you have to find out how many ways we can change a sentence.
+
+1 <= size of word <= 20
+1 <= no of words in a sentence <= 20
+1 <= M <= 1000
+
+wordset = ['listen', 'it', 'is', 'silent']
+sentence = "Iisten is silent".
+
+Listen and Silent is anagram. So, we can rearrange the sentence in 4 ways.
+
+listen is silent
+silent is silent
+listen is listen
+silent is listen
+
+Which word is odd:
+1. Cessation
+2. Closure
+3. Intermission
+4. Valediciton
+
+Given an array of tokens.
+Given a 2d array of requests.
+2types of request=get,post.
+
+
+If token doesn't contained in the token array, request is invalid.
+If there is no csrf for post request, it is invalid.
+
+input
+tokens=["ajjajsjsskskks7","abcd',"xyz"]
+requests=[["get","https://exampld.com/?token=aaaaa&name=rrrr"],
+["get","https://exampld.com/?token=abcd&name=rrrr&location=kuet"],
+["post","https://exampld.com/?token=abcd&csrf=asJ124Kii&name=rrrr&location=kuet&id=hiji"]]
+["post","https://exampld.com/?token=abcd&name=rrrr&location=kuet&id=hiji"]]
+
+Output
+"INVALID"
+"VALID,name,rrrr,location,kuet"
+"VALID,name,rrrr,location,kuet,id,hiji"
+"INVALID"
+exampld.com
+
+Problem 1:
+
+You are given n points (1, 2, ... , n) and m segments. Each segments is already taken. No two segments overlap with each other. 
+In a move you can take 2^x (x=0, 1, 2, .. ) continuous points (that is not already taken). Now, you have to count the minimum number of moves required to take all the points. 
+
+Input Format: 
+n m
+l1 r1
+l2 r2
+.. ..
+.. ..
+.. ..
+lm rm
+
+Output Format: 
+ans
+
+Contraints: 
+1<=n<=1e18
+0<=m<=1e5
+1<=li<=ri<=n
+
+Sample input:
+14 2
+5 5
+7 9
+Sample output: 
+4
+
+....................
+
+Problem 2:(repeatation of Emon's problem-1)
+
+There are given a set of words and M sentences. You can replace the words in sentence which is in the words set and replace with its anagram from the words set. For every sentence you have to find out how many ways we can change a sentence.
+
+1 <= size of word <= 20
+1 <= no of words in a sentence <= 20
+1 <= M <= 1000
+
+Sample:
+
+wordset = ['listen', 'it', 'is', 'silent']
+sentence = "Iisten is silent".
+
+Listen and Silent is anagram. So, we can rearrange the sentence in 4 ways.
+
+listen is silent
+silent is silent
+listen is listen
+silent is listen
+
+....................
+
+MCQs: 
+1. If area of a circle is 25pi, what is the diameter?
+	a. 4
+	b. 5
+	c. 10
+	d. 25
+2. If 12kg rice of price 30 taka/kg and 8kg rice of 40 taka/kg is mixed, what would the price be of the mixed rice?
+	a. 30 taka/kg
+	b. 32 taka/kg
+	c. 34 taka/kg
+	d. 35 taka/kg
+3. If the word "sedative" is changed to "atdesevi" using a encoding technique, what would be "personal" coverted to if the same method is used?
+	a. osreplan
+	b. soreplan
+	c. soerpanl
+	d. soperlan
+4. Given, LCM of two numbers is 2079 and GCF (Greatest Common Factor) is 27. If one number is 189, what would be the other one?
+	a. 297
+	b. 584
+	c. 189
+	d. 216
+
+1. ekta rectangle er length width 20% baraile area kottuk barbe
+2. police tells teacher, teacher tells polititian, polititian tells doctor, doctor tells layer, layer tells surgeon
+then who caught the theif?
+3. manager:trainee = 3:5 and if we add 21 trainee more then how more managers were there?
+4. mone nai 🙂
+
+A clock is 1 minute slow at 1 pm Tuesday and 2 minutes fast at 1 am on the following Friday. When it will give the correct time?
+5 am wednesday
+9 am wednesday
+5 pm wednesday
+9 pm wednesday
+
+Round 1
+Problem 1 : Emon's Problem - 1
+Problem 2 : Shoriful's Problem - 1
+
+MCQ:
+1. Rashed's MCQ - 1
+2. Which one of the following is related in the same way like 35:6?
+(a) 85:9
+(b) 64:8
+(c) 26:5
+(d) 120:11
+3. Shoriful's MCQ - 2
+4. A person needs 4 minutes to type a page. From noon 12 to 1 pm, if a company needs to write 1080 pages, how many employees they will require ?
+
+Round 1
+Problem 1: Mehedy's problem 2
+Problem 2:  Emon's problem 1
+
+MCQ 
+1. ratio of radius 3:2. what is the ratio of circle's area?
+2. "sedative" is encoded to "atdesevi", then what is encoded form of personal?
+3. A clock is 1 minute slow at 1 pm Tuesday and 2 minutes fast at 1 am on the following Friday. When it will give the correct time?
+4. if the sum of squares of 3 consecutive numbers is 365 then what is the sum of these three numbers?
+
+Round 1
+Problem 1: Mehedy's problem 1
+Problem 2: shoriful's problem 1
+MCQ: 
+1. Uday's first mcq
+2. Ratio of coconut and mago trees 5:6. If total trees=121 then how many coconut trees?
+3. Hypotenus and base given then find opposite.
+4. HCF, LCM and one number is given. Find the other number?
+
+Round 1
+Problem 1: Mehedi's problem 1
+Problem 2: Mehedi's problem 2
+
+MCQ
+1. 6 friends A,B,C,D,E,F are sitting in a hexagonal table. F is sitting in front of A, who is sitting right side of B. D is sitting in between F and B. C is sitting beside A. Who is sitting in frint of B?
+2. Circle's area 25pi. What's the diameter?
+3. Ratio of milk:water=5:1. If 4 litre water is added, ratio becomes 5:2. Whats the actual amount of milk?
+4. Easy math
+
+Round 1
+Problem 1: Same as Shoriful's problem 1
+Problem 2: Same as Emon's Problem 2
+
+MCQ:
+1. Given height = 50 and AC = 5, what is the perimeter of the rectangle
+2. You are facing East, then move 90 degrees right. Which side are you facing?
+3. If sum of square of 3 consecutive numbers is 365, what is the sum of the numbers?
+4. Easy math.
+
+Round 1
+Problem 1: Same as Emon's problem 1
+Problem 2: Same as Rafi's Problem 2
+
+MCQ:
+1. Given AB = 4 and AC = 5, what is the perimeter of the rectangle
+2. If Fear::Threat then what is Anger:: ?  
+3. 
+4.
+
+Round 2
+p1. given n events.
+each event has [person, work_title, start_time, end_time]
+given an integer K.
+find the earliest time when everyone is free for a meeting of K minutes.
+if impossible return "-1"
+n <= 1e5
+K <= 1440
+total person <= 5000
+
+sample:
+n = 2
+k = 1
+Adam Sleep 00:00 12:00
+Bob homework 10:00 23:59
+
+ans: -1
+
+n = 2
+k = 1
+Adam Sleep 01:00 12:00
+Bob homework 13:00 23:59
+
+ans: 00:00
+p2: Same as Arnob's Problem 1
+p3:
+Given an String S and a dictionary of n Strings.
+from the given n strings find the lexicographically smallest one which is a subsequence of S.
+
+I was asked to solve 2 problems on second round:
+Problem 1: 
+Given N people and M information of debts in form of tuples (U, V, W) means U owes W tk from V. What is the minimum number of transaction should be made to clear all debts.
+example: 
+3 3  // N and M
+0 1 10   // 0 owes 10 tk from 1
+1 2 5
+2 0 5
+Ans: 1  // if 1 gives 5 tk to 0 then all debts are clear in one transaction.
+1 <= N <= 9
+1 <= M <= 1e5
+1 <= W <= 1e9
+
+
+Problem 2:
+A robot is on coordinate plane and can operate 3 operations:
+G : moves 1 unit on the direction it's currently on.
+L : turns left.
+R : turns right.
+Given a string S of operation sequence. The robot will execute the operation sequence over and over infinity times. Will the robot run on a loop?
+example:
+4
+G      : no
+L       : yes
+GR    : yes
+GRGL: no
+GLGL : yes
+
+Objective 1
+
+We need to fence a 360cm * 160cm field... The cost is 100 tk/m. 
+What is the total cost?
+
+2:
+Marry came to the store before Laura, Jane was the first person who came to the store after Dan. Marry was not the first customer. 
+Who stepped to the shop first? 
+
+
+3 & 4 was repeated... from previous ques which are mentioned above..
+
+
+https://docs.google.com/forms/d/e/1FAIpQLSeL4ghxMppKvOqvnp6dh_Ueikky5gOXATjWb0FO7IY1kHCvhg/viewform

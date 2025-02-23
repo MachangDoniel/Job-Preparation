@@ -20,7 +20,11 @@ Constraints:
 
 link: https://brainly.com/question/34247760
 */
-
+//Approach:
+// 1. Sort the array
+// 2. Fix the first element of the triplet and then iterate over the second element and then find the third element using binary search
+// 3. If the sum of the three elements is less than or equal to t, then increment the count
+// Time complexity: O(n^2logn), Space complexity: O(n)
 #include<bits/stdc++.h>
 
 #define ll long long
