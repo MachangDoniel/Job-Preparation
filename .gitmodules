@@ -4,3 +4,6 @@
 [submodule "Companys/Ostad-Coding-Interview-Preparation"]
 	path = Companys/Ostad-Coding-Interview-Preparation
 	url = https://github.com/MachangDoniel/Ostad-Coding-Interview-Preparation.git
+[submodule "Companys/Samsung"]
+	path = Companys/Samsung
+	url = https://github.com/MachangDoniel/Samsung-Interview-Problems.git
