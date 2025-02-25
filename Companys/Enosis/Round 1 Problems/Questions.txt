@@ -25,16 +25,8 @@ q = 2
 1 10 ans: 5
 6 7 ans: 1
 
-Problem 2:
-S = deft 
-K = 5
-Ans: acft
-
-S = qstd
-K = 1000
-Ans: aaaa
-
 everything <= 1e6
+
 
 
 problem 2:
@@ -48,6 +40,15 @@ distance between two strings of length n is the sum of character by character di
 
 given a string S of size n and K.
 find the lexicographically smallest string T of size n such that distance between S and T does not exceed K.
+
+Problem 2:
+S = deft 
+K = 5
+Ans: acft
+       
+S = qstd
+K = 1000
+Ans: aaaa
 
 mcq:
 
