@@ -1,0 +1,288 @@
+Here are the answers to the questions in the *Trainee Software Engineer (TSE) Test*:
+
+---
+
+### *Analytical Abilities*
+1. *Minimum balls to pick to get at least 3 same color balls in the worst case?*
+   - *Answer:* 5
+
+2. *Which set of letters represents Mothers who are not Racers?*
+   - *Answer:* DFG
+
+3. *Find the number of triangles in the given figure?*
+   - *Answer:* 10
+
+4. *How much loss did Sazid face?*
+   - *Answer:* 1000 TK
+
+---
+
+### *APIs*
+5. *Which HTTP method is most appropriate for modifying job titles?*
+   - *Answer:* PATCH
+
+6. *Difference between PUT and PATCH methods in REST API?*
+   - *Answer:* PUT updates the entire resource, while PATCH updates only specific fields of a resource.
+
+7. *Significance of HTTP status code 429?*
+   - *Answer:* It is used to inform the client that the server is not prepared to handle the request due to too many requests being made, indicating rate limiting or throttling.
+
+8. *Key advantages of implementing rate limiting and throttling mechanisms?*
+   - *Answer:* Ensuring that API endpoints are always available and responsive.
+
+9. *What does the HTTP status code "410 Gone" indicate?*
+   - *Answer:* The resource is no longer available at the requested URL, and it won't be available in the future.
+
+10. *Primary difference between SOAP and RESTful APIs?*
+    - *Answer:* SOAP is protocol-agnostic, while REST is based on HTTP.
+
+---
+
+### *Database*
+11. *Which replication model is most suitable for scenarios where different geographic regions need to update the same dataset independently?*
+    - *Answer:* Multi-Master Replication
+
+12. *Which of the following is the column in the structure of an index?*
+    - *Answer:* Both a and b (search key and data reference)
+
+13. *Which join is equivalent to Cartesian Product?*
+    - *Answer:* Cross Join
+
+14. *Common characteristic of NoSQL databases?*
+    - *Answer:* They can handle unstructured and semi-structured data efficiently.
+
+15. *What does the ‘Having’ clause do?*
+    - *Answer:* Acts like a WHERE clause but is used for groups rather than rows.
+
+---
+
+### *Data Structure*
+16. *Is it a full binary tree or Complete Binary tree?*
+    - *Answer:* Full binary tree.
+
+17. *Inserting an item into the stack is called ...... and deletion is called ......*
+    - *Answer:* push, pop
+
+18. *Which data structure is most advantageous for storing millions of products with unique IDs?*
+    - *Answer:* Hash Map
+
+19. *Lower bound for converting a complete binary tree to a heap?*
+    - *Answer:* \(\Omega(\log n)\)
+
+20. *Which of the following is false about a Heap?*
+    - *Answer:* In a min heap, the value of each parent node is greater than or equal to its child nodes.
+
+21. *How many spanning trees can be formed from a complete graph with 5 vertices?*
+    - *Answer:* 125
+
+22. *Order of the internal node in a B+ tree index?*
+    - *Answer:* 26
+
+---
+
+### *OOP*
+23. *Which implementation of the method will be called in class D?*
+    - *Answer:* Class B & C
+
+24. *Incorrect constructor type?*
+    - *Answer:* Friend Constructor
+
+25. *Role of access modifiers in encapsulation?*
+    - *Answer:* To control the visibility and accessibility of class members.
+
+26. *What is shown by function overriding?*
+    - *Answer:* Polymorphism
+
+27. *Total types of polymorphism in C++?*
+    - *Answer:* 2
+
+28. *Which among the following is safe?*
+    - *Answer:* Upcasting
+
+29. *Primary advantage of composition over inheritance in OOP?*
+    - *Answer:* Composition allows for more flexibility and reduces coupling.
+
+---
+
+### *Algorithm*
+30. *Time complexity of searching for an element in an unsorted array with 'n' elements?*
+    - *Answer:* \( O(n) \)
+
+31. *Best sorting algorithm for an unsorted array with specific conditions?*
+    - *Answer:* Quick sort
+
+32. *Average case time complexity of binary search using recursion?*
+    - *Answer:* \( O(\log n) \)
+
+33. *Most efficient sorting algorithm for a linked list?*
+    - *Answer:* Merge Sort
+
+34. *Which data structure is most suitable for efficient text search operations?*
+    - *Answer:* Trie
+
+35. *Which approach can you use to efficiently solve the N-Queens problem?*
+    - *Answer:* Backtracking
+
+36. *Primary purpose of memoization?*
+    - *Answer:* To store intermediate results and avoid redundant calculations in dynamic programming.
+
+---
+
+### *Design Pattern*
+37. *Which design pattern is used to create an object with a fixed set of properties and optional properties with default values?*
+    - *Answer:* Builder Pattern
+
+38. *What problem does the singleton design pattern solve?*
+    - *Answer:* It ensures that a class has only one instance and provides a global point of access to it.
+
+39. *Difference between MVP and MVVM design patterns?*
+    - *Answer:* Presenter can hold reference of View but ViewModel cannot.
+
+40. *Purpose of the "Strategy" pattern?*
+    - *Answer:* To define a family of algorithms, encapsulate each one, and make them interchangeable.
+
+41. *True statement about the Decorator Pattern?*
+    - *Answer:* It is primarily used to add new responsibilities to an object dynamically.
+
+---
+
+### *Networking*
+42. *Purpose of a subnet mask in IP addressing?*
+    - *Answer:* To indicate the network portion of an IP address and the host portion.
+
+43. *Network address for the IP 192.168.2.100 with a subnet mask of 255.255.255.192?*
+    - *Answer:* 192.168.2.64
+
+44. *Time complexity of the given code?*
+    - *Answer:* \( O(\log N) \)
+
+45. *Default subnet mask for a Class B IP address?*
+    - *Answer:* 255.255.0.0
+
+46. *Which layer of the OSI model is responsible for logical addressing and routing of data packets?*
+    - *Answer:* Network Layer
+
+---
+
+### *Simple Math Problems*
+47. *Side opposite the right angle in a right-angled triangle?*
+    - *Answer:* Hypotenuse
+
+48. *How many medium cakes were sold?*
+    - *Answer:* 60
+
+49. *Distance between City A and City B?*
+    - *Answer:* 216 miles
+
+50. *Circumference of a circle with a radius of 5 cm?*
+    - *Answer:* 31.4 cm
+
+51. *Probability that a randomly taken book is not a history book?*
+    - *Answer:* 8/12
+
+---
+
+### *General Knowledge*
+52. *A reference is:*
+    - *Answer:* Alias to an existing variable and holds a memory address.
+
+53. *Which mode will write data to a file even if it doesn't exist?*
+    - *Answer:* Both w+ and a+
+
+54. *When did the great depression take place?*
+    - *Answer:* 1929-1939
+
+55. *Second law of thermodynamics?*
+    - *Answer:* For a spontaneous process, the entropy of the universe increases.
+
+56. *What does the acronym "LAN" typically stand for?*
+    - *Answer:* Local Area Network
+
+---
+
+### *Programming*
+57. *Value of i after the loop ends?*
+    - *Answer:* 5
+
+58. *What will be printed as the value of i?*
+    - *Answer:* 10
+
+59. *Value of the answer variable after the code execution?*
+    - *Answer:* 10
+
+60. *Output of the function?*
+    - *Answer:* 18
+
+61. *Output of the C++ code?*
+    - *Answer:* 1 2 3 4 5
+
+62. *Type of function used in the Fibonacci code?*
+    - *Answer:* Recursive function
+
+63. *Percentage discount?*
+    - *Answer:* 25%
+
+64. *Next number in the sequence: 0.28, 0.56, 1.68, —*
+    - *Answer:* 6.72
+
+---
+
+
+Here are the solutions to the questions in the provided PDF:
+
+### Programming/Coding Output
+1. *Output of the ColdFusion code:*
+   - *Answer:* Python
+
+2. *Output of the ColdFusion function:*
+   - *Answer:* 10 15
+
+3. *Purpose of the ColdFusion component:*
+   - *Answer:* To define a function that returns a greeting message
+
+4. *Output of the Python exception handling code:*
+   - *Answer:* Both A and B (Caught an exception: An error occurred and Handled in main: An error occurred)
+
+5. *Output of the Python matrix transpose code:*
+   - *Answer:* [[2, 5, 8]]
+
+6. *Output of the Python list appending code:*
+   - *Answer:* [1, 2] [1, 2] [3]
+
+7. *Output of the JavaScript string split code:*
+   - *Answer:* 2
+
+8. *Output of the JavaScript object property assignment code:*
+   - *Answer:* 456
+
+9. *Output of the JavaScript setTimeout code:*
+   - *Answer:* 1 4 3 2
+
+10. *Output of the JavaScript array reduce code:*
+    - *Answer:* [1, 2, 3, 7, 8]
+
+11. *Output of the JavaScript typeof code:*
+    - *Answer:* number
+
+12. *Output of the JavaScript Symbol code:*
+    - *Answer:* Code won't run due to TypeError
+
+13. *Output of the JavaScript setTimeout in a loop code:*
+    - *Answer:* 55555
+
+14. *Output of the JavaScript Promise and setTimeout code:*
+    - *Answer:* Start End Promise Timeout
+
+15. *Output of the JavaScript variable hoisting code:*
+    - *Answer:* Undefined 10
+
+16. *Output of the JavaScript function with variable hoisting code:*
+    - *Answer:* Undefined 10
+
+17. *Output of the Python class code:*
+    - *Answer:* Alice
+
+18. *Output of the JavaScript equality comparison code:*
+    - *Answer:* true false
+
+These answers are based on the provided code snippets and standard behavior of the respective programming languages.
